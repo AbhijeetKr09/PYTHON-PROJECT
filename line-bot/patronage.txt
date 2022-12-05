@@ -1,0 +1,8 @@
+1: king 
+2: queen 
+3: rainbow 
+4: juliet 
+1: afaf 
+2: agadf 
+3: agadgf 
+4: agag 
