@@ -7,13 +7,13 @@
     #Hint2: This method will also help you: https://www.w3schools.com/python/ref_string_replace.asp
         #Hint3: THis method will help you: https://www.w3schools.com/python/ref_string_strip.asp
 
-with open("./Input/Names/invited_names.txt", mode='r') as f:
+with open("./Mail Merge Project Start/Input/Names/invited_names.txt", mode='r') as f:
     names = f.readlines()
-with open("./Input/Letters/starting_letter.txt", mode='r') as f:
+with open("./Mail Merge Project Start/Input/Letters/starting_letter.txt", mode='r') as f:
     letter = f.read()
     for name in names:
         stripped_name = name.strip()
         new_letter = letter.replace("[name]", f"{stripped_name}")
-        with open(f"./Output/ReadyToSend/letter_{stripped_name}.txt", mode='w') as f:
+        with open(f"./Mail Merge Project Start/Output/ReadyToSend/letter_{stripped_name}.txt", mode='w') as f:
             f.write(new_letter)
 
